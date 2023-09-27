@@ -21,6 +21,14 @@ function App() {
 
   return (
     <div className="App">
+       <form onSubmit={handleSubmit}>
+        <label>
+          Enter your name:
+          <input type="text" value={name} onChange={handleChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <p>{greeting}</p>
 
     </div>
   );
