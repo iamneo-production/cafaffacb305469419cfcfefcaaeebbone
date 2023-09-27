@@ -15,6 +15,8 @@ function App() {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
+    const newGreeting = `Hello, ${name}!`;
+    setGreeting(newGreeting);
   }
 
   return (
