@@ -1,24 +1,22 @@
 import './App.css';
-import React from 'react';
-import { useState } from 'react;
+import React,{useState} from 'react';
 
 function App() {
 
-  const [name, setName] = useState('');
-  const [greeting, setGreeting] = useState('');
+  const [name,setName] = useState('');
+  const[greeting,setGreeting] = useState('');
 
-  const handleChange = (e) =>{
-    setName(e.target.value);
-  }
+const handleChange = (e) =>{
+  setName(e.target.value);
+}
 
-  const handleSubmit = (e) =>{
-    e.preventDefault();
-    setGreeting(Hello, ${name});
-  }
-
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setGreeting(Hello,${name});
+}
   return (
     <div className="App">
-           <div className="contents">
+      <div className="contents">
         <h3>Hey!!! Greeting</h3>
         <form onSubmit={handleSubmit} data-testid="form">
           <label data-testid="label">Enter name :</label>
@@ -27,8 +25,6 @@ function App() {
           </form>
           {greeting && <h2>{greeting}</h2>}
     </div>
-
-
     </div>
   );
 }
