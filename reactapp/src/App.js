@@ -12,7 +12,7 @@ const handleChange = (e) =>{
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  setGreeting(Hello,${name});
+  setGreeting(`Hello,${name}`);
 }
   return (
     <div className="App">
