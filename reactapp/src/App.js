@@ -7,8 +7,14 @@ function App() {
   const [name, setName] = useState('');
   const [greeting, setGreeting] = useState('');
 
-  const handleChange=(e) =>{
-    
+  const handleChange = (e) =>{
+    e.preventDefault();
+    const newName= e.target.value;
+    setName(newName);
+  }
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
   }
 
   return (
