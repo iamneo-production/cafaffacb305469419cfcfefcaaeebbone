@@ -1,6 +1,6 @@
 import './App.css';
-import React from react;
-import { useState } from react;
+import React from 'react';
+import { useState } from 'react;
 
 function App() {
 
@@ -8,15 +8,12 @@ function App() {
   const [greeting, setGreeting] = useState('');
 
   const handleChange = (e) =>{
-    e.preventDefault();
-    const newName= e.target.value;
-    setName(newName);
+    setName(e.target.value);
   }
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    const newGreeting = `Hello, ${name}!`;
-    setGreeting(newGreeting);
+    setGreeting(Hello, ${name});
   }
 
   return (
