@@ -1,11 +1,19 @@
 import './App.css';
-import useState
+import React from react;
+import { useState } from react;
 
 function App() {
 
+  const [name, setName] = useState('');
+  const [greeting, setGreeting] = useState('');
+
+  const handleChange=(e) =>{
+    
+  }
+
   return (
     <div className="App">
-      const[name,setName]=useState('');
+
     </div>
   );
 }
